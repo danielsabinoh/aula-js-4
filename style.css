@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #f8f8f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+h2#relogio, h2#cronometro {
+    font-size: 4rem;
+    color: #00ffff;
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+    margin: 10px 0;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+h3#agora {
+    color: #7fffd4;
+    text-shadow: 0 0 10px rgba(127, 255, 212, 0.5);
+}
+
+hr {
+    width: 80%;
+    border: 1px solid #00ffff;
+    margin: 20px 0;
+}
+
+div {
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00ffff;
+    color: #0f2027;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+button:hover {
+    background-color: #0f2027;
+    color: #00ffff;
+    box-shadow: 0 0 20px #00ffff, inset 0 0 10px #00ffff;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #555;
+    color: #aaa;
+    box-shadow: none;
+    cursor: not-allowed;
+}
